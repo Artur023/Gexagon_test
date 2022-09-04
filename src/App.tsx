@@ -1,9 +1,9 @@
 import React from "react";
-import {Route, Router, Routes} from "react-router-dom";
+import {Route,Routes} from "react-router-dom";
 import {MainPage} from "./pages/MainPage";
-import {AuthPage} from "./pages/AuthPage";
-import {RegistrationPage} from "./pages/RegistrationPage";
+import SignUp from "./pages/SignUp";
 import {Navigation} from "./components/Navigation";
+import SignIn from "./pages/SignIn";
 
 function App() {
     return (
@@ -11,8 +11,8 @@ function App() {
             <Navigation/>
             <Routes>
                 <Route path="/" element={<MainPage/>}/>
-                <Route path="/auth" element={<AuthPage/>}/>
-                <Route path="/registration" element={<RegistrationPage/>}/>
+                <Route path="/auth" element={<SignIn/>}/>
+                <Route path="/registration" element={<SignUp/>}/>
             </Routes>
         </>
     )
